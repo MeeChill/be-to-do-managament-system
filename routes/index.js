@@ -1,12 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-// Welcome Page
+//Welcome page
 
-router.get('/', (req, res) => {
-  res.send(
-    'Selamat Datang\n Rest CRUD API with Node.js, Express, and Postgres API'
-  );
+router.get('/', function (req, res) {
+  res.send('Welcome to Node.js, Express and MySQL API');
 });
 
 module.exports = router;
